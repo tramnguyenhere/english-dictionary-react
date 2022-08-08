@@ -1,8 +1,154 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@font-face {
+  font-family: myFirstFont;
+  src: url(Yipes.otf);
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom right, #ffc8dd, #a2d2ff);
+}
+
+.container {
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 5px 5px #ffc8dd;
+}
+
+.container h1 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: #8093f1;
+  font-family: myFirstFont;
+}
+
+.container form {
+  margin-top: 1.5rem;
+}
+
+.container form .row {
+  display: flex;
+  flex-direction: column;
+}
+.container form .row .voices-icons {
+  background: #fff;
+  margin-top: -15px;
+  border: 1px solid #bbb;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top: none;
+  margin-bottom: 10px;
+  text-align: right;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.container form .row .voices-icons .select-voices {
+  flex: 1;
+}
+
+.container form .row .voices-icons i {
+  cursor: pointer;
+  opacity: 0.45;
+  margin-left: 10px;
+}
+
+.container form .row .voices-icons i.speak {
+  color: #8093f1;
+}
+
+.container form textarea,
+.container form select {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.container form textarea {
+  border: 1px solid #bbb;
+  padding: 3px 5px;
+  margin-bottom: 12px;
+  resize: none;
+}
+
+.container form select {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.container ul {
+  list-style: none;
+  margin-top: 5px;
+  font-size: 1.3rem;
+  max-height: 250px;
+  overflow: scroll;
+}
+
+.container ul .word h2 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.container ul .word span {
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.container ul .contain {
+  margin-top: 7px;
+}
+
+.container ul .contain h3 {
+  font-size: 1rem;
+}
+
+.container ul .contain .details {
+  border-top: 1px solid #bde0fe;
+  border-bottom: 1px solid #bde0fe;
+  margin-top: 10px;
+  padding: 5px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  border-left: 3px solid #8093f1;
+  border-right: 1px solid #bde0fe;
+}
+
+.container ul .contain .details p {
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+.container ul .contain .synonyms span {
+  opacity: 0.6;
+  border-bottom: 1px dotted #8093f1;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.container ul .contain .synonyms span:hover {
+  color: #8093f1;
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
