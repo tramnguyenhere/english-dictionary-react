@@ -26,10 +26,20 @@ const App = () => {
       .catch((err) => setError(err));
   };
 
-  useEffect(() => {
-    if (!text.trim()) return;
+  const reset = () => {
+    setIsSpeaking('');
+    setError('');
+    setMeanings([]);
+    setPhonetics([]);
+    setWord('');
+  };
 
-    dictionaryApi(text);
+  useEffect(() => {
+    if (!text.trim()) return reset();
+    const debounce = setTimeout(() => {
+      dictionaryApi(text);
+    }, 1000);
+    return () => clearTimeout(debounce);
   }, [text]);
 
   const startSpeech = (text) => {
@@ -39,7 +49,7 @@ const App = () => {
     synth.speak(utterance);
   };
   const handleSpeech = () => {
-    if (!text.trim()) return;
+    if (!text.trim()) return reset();
     if (!synth.speaking) {
       startSpeech(text);
       setIsSpeaking('speak');
@@ -51,7 +61,7 @@ const App = () => {
       if (!synth.speaking) {
         setIsSpeaking('');
       }
-    }, 100);
+    }, 1000);
   };
 
   return (
@@ -90,7 +100,14 @@ const App = () => {
         </div>
       </form>
 
-      <Result />
+      {text.trim() !== '' && !error && (
+        <Result
+          word={word}
+          meanings={meanings}
+          phonetics={phonetics}
+          setText={setText}
+        />
+      )}
     </div>
   );
 };
