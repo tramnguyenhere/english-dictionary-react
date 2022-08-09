@@ -27,6 +27,6 @@ On your terminal or cmd, type: git clone git@github.com:tramnguyenhere/english-d
 
 . Deploy the app on web-browsers: npm start
 
-Technology use in the application
+### Technology use in the application
 
 . React .CSS .[Dictionary API](https://api.dictionaryapi.dev/api/v2/entries/en/hello)
