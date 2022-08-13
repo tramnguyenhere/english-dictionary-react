@@ -1,4 +1,4 @@
-# A minimal yet aesthetic english dictionary 📓
+# A minimal english dictionary 📓
 
 This project was created with Reactjs, inspired and guided by [Dev A.T Viet Nam](https://www.youtube.com/watch?v=PnY_lb8Ezhs).
 This dictionary allows you to hear how the word is pronounced, of course get to understand the word, and its synonyms.
