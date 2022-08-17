@@ -8,25 +8,25 @@ This dictionary allows you to hear how the word is pronounced, of course get to 
 ![Screenshot 2022-08-09 at 17 18 03](https://user-images.githubusercontent.com/57455557/183672729-9dc9d523-f194-4f0a-9899-b75e26993d57.png)
 
 
-### Demo
+## Demo
 Feel free to experience the app from ➡️ [here](https://english-dictionary-tramnguyenhere.netlify.app)
 
-### How to build and run
+## How to build and run
 
-1. Install NodeJs and npm
+### Install NodeJs and npm
 
 Download and install Node.js from this link https://nodejs.org/en/download/
 
-2. Clone or download this repo.
+### Clone or download this repo.
 
-On your terminal or cmd, type: git clone git@github.com:tramnguyenhere/english-dictionary-react.git
+On your terminal or cmd, type: git clone git@github.com:tramnguyenhere/english-dictionary-react.git <br />
 
-. On your command line, navigate to root folder and install: npm install
+On your command line, navigate to root folder and install: npm install
 
-3. Deploy the application
+### Deploy the application
 
 . Deploy the app on web-browsers: npm start
 
-### Technology use in the application
+## Technology use in the application
 
-. React .CSS .[Dictionary API](https://api.dictionaryapi.dev/api/v2/entries/en/hello)
+. React <br /> . CSS <br /> . [Dictionary API](https://api.dictionaryapi.dev/api/v2/entries/en/hello)
